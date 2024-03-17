@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Cricbuzz_Logo.png" alt="Cricket Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <button type="button" class="btn btn-warning">Sign-In</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://image.telanganatoday.com/wp-content/uploads/2023/04/IPL-7_V_jpg--442x260-4g.webp?sw=412&dsz=442x260&iw=412&p=false&r=2.625"
+                            alt="virat-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://media.istockphoto.com/id/518022060/photo/cricket-batsman-hitting-ball-during-cricket-match-in-stadium.webp?b=1&s=170667a&w=0&k=20&c=qsbdTpZ2wcOJwcdNXPeErUzS-1QKZuunuv3GGgP6dKA="
+                            alt="ipl-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://e0.pxfuel.com/wallpapers/353/144/desktop-wallpaper-virat-kohli-the-difference-between-men-and-boys-anshuman-gaekwad-cricket-news-india-tv-virat-kohli-test-thumbnail.jpg">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="match-section">
+            <div class="match">
+                <p>1st Test - England tour of India,2024</p>
+                <div class="team">
+                    <img src="https://t3.ftcdn.net/jpg/06/12/34/84/360_F_612348476_k3i3brMUOo3N9Wk3yoceMHqZ8w4jpFqu.jpg"
+                        alt="Team IND">
+                    <span>IND</span>
+                </div>
+                <p>VS</p>
+                <div class="team">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/800px-Flag_of_England.svg.png"
+                        alt="Team ENG">
+                    <span>ENG</span>
+                </div>
+                <p>Scores: ENG - 301-10 (68.3)</p>
+                <p>Scores: IND - 240-3 (54.1)</p>
+                <p>Status: Live</p>
+            </div>
+
+            <div class="match">
+                <p>3rd ODI - Austrelia tour of Sri Lanka,2024</p>
+                <div class="team">
+                    <img src="https://img.freepik.com/free-vector/illustration-australia-flag_53876-27116.jpg"
+                        alt="Team AUS Logo">
+                    <span>Aus</span>
+                </div>
+                <p>VS</p>
+                <div class="team">
+                    <img src="https://seeklogo.com/images/S/Sri_Lanka-logo-44FEE30910-seeklogo.com.png" alt="Team SL">
+                    <span>SL</span>
+                </div>
+                <p>Scores: AUS - 00/00 (00.0)</p>
+                <p>Scores: SL - 00/00 (00.0)</p>
+                <p>Status: Upcoming</p>
+            </div>
+
+            <div class="match">
+                <p>T20 - Women's Premier League</p>
+                <div class="team">
+                    <img src="https://c.ndtvimg.com/2020-02/1r5vdst_rcb_625x300_14_February_20.jpg" alt="Team RCB Logo">
+                    <span>RCB</span>
+                </div>
+                <p>VS</p>
+                <div class="team">
+                    <img src="https://etimg.etb2bimg.com/photo/78145880.cms" alt="Team MI Logo">
+                    <span>MI</span>
+                </div>
+                <p>Scores: MI - 180/4 (20)</p>
+                <p>Scores:RCB - 145/6 (20)</p>
+                <p>Status: MI won by 35 runs</p>
+            </div>
+
+            <div class="match">
+                <p>1st ODI - South Africa tour of New ZeLand,2024</p>
+                <div class="team">
+                    <img src="https://i.pinimg.com/originals/b4/72/51/b47251a51c6e125e9078f920d0174de6.png"
+                        alt="Team NZ Logo">
+                    <span>NZ</span>
+                </div>
+                <p>VS</p>
+                <div class="team">
+                    <img src="https://static.toiimg.com/thumb/msid-79207162,width-400,resizemode-4/79207162.jpg"
+                        alt="Team SA Logo">
+                    <span>SA</span>
+                </div>
+                <p>Scores: NZ - 30/1 (09.3)</p>
+                <p>Scores: SA - 290/10 (50)</p>
+                <p>Status: Live</p>
+            </div>
+
+            <div class="match">
+                <p>2nd T20 - Afghanistan tour of Ireand,2024 </p>
+                <div class="team">
+                    <img src="https://www.shutterstock.com/shutterstock/videos/1094887305/thumb/1.jpg?ip=x480"
+                        alt="Team AFG Logo">
+                    <span>IRE</span>
+                </div>
+                <p>VS</p>
+                <div class="team">
+                    <img src="https://ih0.redbubble.net/image.4650667288.6492/raf,360x360,075,t,fafafa:ca443f4786.jpg"
+                        alt="Team IRE Logo">
+                    <span>AFG</span>
+                </div>
+                <p>Scores: AFG - 00/00 (00.0)</p>
+                <p>Scores: IRE - 00/00 (00.0)</p>
+                <p>Status: Upcoming</p>
+            </div>
+
+            <div class="match">
+                <p>3rd Test - West Indies tour of Zimbabwe,2024 </p>
+                <div class="team">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjs_8a6spP38pWM0JrpAxA52EVkJc2CSXOrw&usqp=CAU"
+                        alt="Team WI Logo">
+                    <span>WI</span>
+                </div>
+                <p>VS</p>
+                <div class="team">
+                    <img src="https://i.pinimg.com/736x/a1/58/d4/a158d4c4e68fb43785498615eaece7bd.jpg"
+                        alt="Team ZIM Logo">
+                    <span>ZIM</span>
+                </div>
+                <p>Scores: WI - 60/2 (40.5)</p>
+                <p>Scores: IRE - 00/00 (00.0)</p>
+                <p>Status: Live</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="textt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laboriosam quasi qui et quia
+            quibusdam id
+            natus, deserunt, vitae ab aspernatur cumque pariatur voluptatem, tenetur quae odio itaque similique tempore!
+            Ducimus eos hic tempore placeat illo autem debitis delectus! Officia ducimus facilis sed debitis temporibus
+            quos! Eveniet ut deserunt dolores minus ex officia, ipsam aliquam voluptatum fugiat cumque expedita. Ullam.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><img
+                    src="https://img.freepik.com/premium-psd/3d-circle-with-facebook-logo-isolated-transparent-background_125540-3726.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710666000&semt=ais"
+                    alt="Facebook"></a>
+            <a href="#"><img
+                    src="https://img.freepik.com/free-vector/instagram-background-gradient-colors_23-2147823814.jpg"
+                    alt="Instagram"></a>
+            <a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
+                    alt="Twitter"></a>
+            <a href="#"><img
+                    src="https://e1.pxfuel.com/desktop-wallpaper/517/453/desktop-wallpaper-india-national-cricket-team-bcci-logo.jpg"
+                    alt="BCCI"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
