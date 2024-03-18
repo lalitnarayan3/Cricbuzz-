@@ -1,6 +1,7 @@
-*{
-    margin: 0px;
-    padding: 0px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #333;
@@ -35,40 +36,33 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
-
-.carousel-item img {
-    height: 490px; 
-    object-fit: cover; 
+.container {
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-.match-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.match-section .match {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-}
-
-.match-section .match p {
-    margin: 5px 0;
-}
-
-.team {
+.news-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
 }
 
-.team img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+img {
+    max-width: 150px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
 }
 
 footer {
@@ -96,10 +90,4 @@ footer {
 .footer-icons img {
     width: 30px;
     height: 30px;
-}
-
-@media screen and (min-width: 768px) {
-    .match-section .match {
-        width: 48%;
-    }
 }
