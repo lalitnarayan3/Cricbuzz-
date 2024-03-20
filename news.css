@@ -4,12 +4,11 @@ body {
     padding: 0;
 }
 header {
-    background-color: #333;
+    background-color:rgb(32,33,36);
     color: white;
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    background-color: black;
     color: white;
     font-weight: bold;
    
@@ -36,6 +35,28 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+.sidebar {
+    display:none;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    left: 90%;
+}
+.sidebar div{
+    margin: 20px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar-icon img{
+    width: 30px;
+}
+.sidebar-icon {
+    display: none;
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -51,7 +72,6 @@ nav ul li a {
 img {
     max-width: 150px;
     margin-right: 20px;
-    text-align: center;
 }
 
 h2 {
@@ -64,30 +84,113 @@ p {
     margin: 10px 0;
     font-size: 16px;
 }
-
+.box{
+    
+    background-color: rgb(160,179,235);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    font-weight: 500;
+}
 footer {
-    height: 170px;
-    background-color: #333;
-    color: white;
-    padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    background-color: black;
+    background-color:rgb(32,33,36);
     color: white;
-    font-weight: bold;
-}
-.textt{
-    width: 50%;
-}
-.footer-icons {
-    margin-top: 20px;
+    padding: 20px;
 }
 
-.footer-icons a {
-    margin-right: 10px;
+.footer-column {
+    flex: 1;
+    margin: 10px;
 }
-
-.footer-icons img {
+.footer-column a {
+text-decoration: none;
+color:white;
+}
+.iconDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.iconDiv img{
     width: 30px;
     height: 30px;
+}
+
+h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width:767px){
+    
+}
+
+@media (max-width: 620px) {
+    .sidebar-icon {
+        display: block;
+    }
+    .sidebar {
+        display: block;
+        position: relative;
+        left: 70%;
+    }
+    nav ul li {
+        display: none;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .sidebar {
+        position: relative;
+        left: 50%;
+    }
+    .sidebar-icon img{
+        width: 22px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .sidebar-icon img{
+        width: 25px;
+    }
+    .logo img {
+        vertical-align: middle;
+        width: 125px;
+        height: 28px 
+} 
+}
+
+@media screen and (max-width:445px) {
+    footer{
+        width: 100vw;
+    }
+    .footer-column {
+        flex:1 ;
+        margin: 6px;
+    }
+    .iconDiv img{
+        width: 24px;
+        height: 24px;
+    }
+    .iconDiv{
+        gap: 7px;
+    }
+    .footer-column h5{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    .footer-column p{
+        font-size: 12px;
+       margin: 3px 0;
+    }
 }

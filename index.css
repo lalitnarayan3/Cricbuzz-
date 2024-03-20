@@ -2,13 +2,20 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color:rgb(32,33,36);
+    font-family:Arial, sans-serif;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+}
 header {
-    background-color: #333;
+    background-color:rgb(32,33,36);
     color: white;
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    background-color: black;
     color: white;
     font-weight: bold;
    
@@ -36,70 +43,222 @@ nav ul li a {
     text-decoration: none;
 }
 
+.sidebar {
+    display: none;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    left: 90%;
+   
+}
+.sidebar div{
+    margin: 20px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: white;
+}
+.sidebar-icon img{
+    width: 30px;
+}
+.sidebar-icon {
+    display: none;
+}
+
+
 .carousel-item img {
     height: 490px; 
     object-fit: cover; 
 }
 
-.match-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.match-section .match {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-}
-
-.match-section .match p {
-    margin: 5px 0;
-}
-
-.team {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.team img {
+.container img{
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
+.iplName{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+#iplNameDiv{
+    background-color: rgb(34,53,119);
+    color:white
+}
+.iplName img{
+    width: 75px;
+    height: 55px;
+    margin: 8px;
+}
 
 footer {
-    height: 170px;
-    background-color: #333;
-    color: white;
-    padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-}
-.textt{
-    width: 50%;
-}
-.footer-icons {
-    margin-top: 20px;
+    background-color:white;
+    color: #0c0c0c;
+    padding: 20px;
 }
 
-.footer-icons a {
-    margin-right: 10px;
+.footer-column {
+    flex:1 ;
+    margin: 10px;
 }
-
-.footer-icons img {
+.footer-column a {
+text-decoration: none;
+color: #0c0c0c;
+}
+.iconDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.iconDiv img{
     width: 30px;
     height: 30px;
 }
 
-@media screen and (min-width: 768px) {
-    .match-section .match {
-        width: 48%;
+h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width:900px) {
+    .carousel-item img {
+        height: 420px; 
+        object-fit: cover;
     }
+}
+
+@media screen and (max-width:650px) {
+    .carousel-item img {
+        height: 250px; 
+        object-fit: cover;
+    }
+        .col h6 {
+            font-size: 14px;
+        }
+    .time p{
+        font-size: 13px;
+    }
+    .t{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:538px) {
+    .col h6 {
+        font-size: 13px;
+    }
+.time p{
+    font-size: 11px;
+}
+.t{
+    font-size: 11px;
+}
+}
+
+@media screen and (max-width:360px) {
+    .carousel-item img {
+        height: 180px; 
+        object-fit: cover;
+    }
+    
+}
+@media screen and (max-width:445px) {
+    .footer-column {
+        flex:1 ;
+        margin: 6px;
+    }
+    .iconDiv img{
+        width: 24px;
+        height: 24px;
+    }
+    .iconDiv{
+        gap: 7px;
+    }
+    .footer-column h5{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    .footer-column p{
+        font-size: 12px;
+       margin: 3px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo img {
+        vertical-align: middle;
+        width: 135px;
+        height: 35px 
+} 
+.iplName img{
+    width: 70px;
+    height: 50px;
+    margin: 7px;
+}
+.iplName h3{
+    font-size: 22px;
+}
+    
+}
+
+@media (max-width: 620px) {
+    .sidebar-icon {
+        display: block;
+    }
+    .sidebar {
+        display: block;
+        position: relative;
+        left: 70%;
+    }
+    nav ul li {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .sidebar-icon img{
+        width: 25px;
+    }
+    .logo img {
+        vertical-align: middle;
+        width: 125px;
+        height: 28px 
+} 
+.iplName img{
+    width: 60px;
+    height: 40px;
+    margin: 5px;
+}
+.iplName h3{
+    font-size: 19px;
+}
+    
+}
+@media screen and (max-width:320px) {
+    .sidebar {
+        position: relative;
+        left: 50%;
+    }
+    .sidebar-icon img{
+        width: 22px;
+    }
+.iplName img{
+    width: 50px;
+    height: 30px;
+    margin: 3px;
+}
+.iplName h3{
+    font-size: 16px;
+}
+    
 }

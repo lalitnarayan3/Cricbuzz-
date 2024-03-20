@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -18,16 +22,22 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="login.html">
-                        <button type="button" class="btn btn-primary">Login</button>
-                    </a>
-                </li>
+                <li class="navLi"><a href="index.html">Home</a></li>
+                <li class="navLi"><a href="news.html">News</a></li>
+                <li class="navLi"><a href="#">Videos</a></li>
+                <div class="sidebar-icon">
+                    <img src="https://banner2.cleanpng.com/20180628/zaz/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724be5a1f0.5796308115301637879406.jpg"
+                        alt="Sidebar Icon">
+                </div>
             </ul>
         </nav>
     </header>
+    <div class="sidebar">
+
+        <div><a href="index.html">Home</a></div>
+        <div><a href="news.html">News</a></div>
+        <div><a href="#">Videos</a></div>
+    </div>
     <main>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -64,140 +74,475 @@
         </div>
 
 
-        <div class="match-section">
-            <div class="match">
-                <p>1st Test - England tour of India,2024</p>
-                <div class="team">
-                    <img src="https://t3.ftcdn.net/jpg/06/12/34/84/360_F_612348476_k3i3brMUOo3N9Wk3yoceMHqZ8w4jpFqu.jpg"
-                        alt="Team IND">
-                    <span class="fw-bold">IND</span>
-                </div>
-                <p>VS</p>
-                <div class="team">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/800px-Flag_of_England.svg.png"
-                        alt="Team ENG">
-                    <span class="fw-bold">ENG</span>
-                </div>
-                <p>IND - 240-3 (54.1)</p>
-                <p>ENG - 301-10 (68.3)</p>
-                <p class="text-danger fw-bold">Live</p>
-            </div>
+        <div class="container mt-5 mb-5 border border-2 solid #ddd rounded-5">
+            <div class="row" id="iplNameDiv">
+                <div class="col  text-align-center">
+                    <div class="iplName">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6BOhZ_BchXil_4L_nvphpdJyW0RK1TOQXG9UN8zQiFbh-bKsYmma0nXfbtqerytVS33I&usqp=CAU"
+                            alt="ipl logo">
 
-            <div class="match">
-                <p>3rd ODI - Austrelia tour of Sri Lanka,2024</p>
-                <div class="team">
-                    <img src="https://img.freepik.com/free-vector/illustration-australia-flag_53876-27116.jpg"
-                        alt="Team AUS Logo">
-                    <span class="fw-bold">Aus</span>
+                        <h3>Indian Premier League</h3>
+                    </div>
                 </div>
-                <p>VS</p>
-                <div class="team">
-                    <img src="https://seeklogo.com/images/S/Sri_Lanka-logo-44FEE30910-seeklogo.com.png" alt="Team SL">
-                    <span class="fw-bold">SL</span>
-                </div>
-                <p>AUS - 00/00 (00.0)</p>
-                <p>SL - 00/00 (00.0)</p>
-                <p class="text-primary fw-bold">Upcoming...</p>
             </div>
+            <div class="row border border-1 solid light">
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 1 of 21</p>
+                        <p>Fri, 22 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/csk.jpeg" alt="csk">
+                        <h6>CSK</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/rcb.jpg" alt="rcb">
+                        <h6>RCB</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 8:00 pm
+                    </p>
+                </div>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 2 of 21</p>
+                        <p>Sat, 23 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/pbks.png" alt="pbks">
+                        <h6>PBKS</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/dc.png" alt="dc">
+                        <h6>DC</h6>
+                    </div>
+                    <br>
+                    <p class="t" class="time" class="time">Starts at 3:30 pm
+                    </p>
+                </div>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 3 of 21</p>
+                        <p>Sat, 23 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/kkr.jpeg" alt="kkr">
+                        <h6>KKR</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/srh.png" alt="srh">
+                        <h6>SRH</h6>
+                    </div>
+                    <br>
+                    <p class="t" class="time">Starts at 7:30 pm
+                    </p>
 
-            <div class="match">
-                <p>T20 - Women's Premier League</p>
-                <div class="team">
-                    <img src="https://c.ndtvimg.com/2020-02/1r5vdst_rcb_625x300_14_February_20.jpg" alt="Team RCB Logo">
-                    <span class="fw-bold">RCB</span>
                 </div>
-                <p>VS</p>
-                <div class="team">
-                    <img src="https://etimg.etb2bimg.com/photo/78145880.cms" alt="Team MI Logo">
-                    <span class="fw-bold">MI</span>
-                </div>
-                <p>MI - 180/4 (20)</p>
-                <p>RCB - 145/6 (20)</p>
-                <p class="text-success fw-bold">MI won by 35 runs!!</p>
             </div>
-
-            <div class="match">
-                <p>1st ODI - South Africa tour of New ZeLand,2024</p>
-                <div class="team">
-                    <img src="https://i.pinimg.com/originals/b4/72/51/b47251a51c6e125e9078f920d0174de6.png"
-                        alt="Team NZ Logo">
-                    <span class="fw-bold">NZ</span>
+            <div class="row border border-1 solid light">
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 4 of 21</p>
+                        <p>Sun, 24 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/rr.png" alt="rr">
+                        <h6>RR</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/lsg.jpeg" alt="lsg">
+                        <h6>LSG</h6>
+                    </div>
+                    <br>
+                    <p class="t" class="time">Starts at 3:30 pm
+                    </p>
                 </div>
-                <p>VS</p>
-                <div class="team">
-                    <img src="https://static.toiimg.com/thumb/msid-79207162,width-400,resizemode-4/79207162.jpg"
-                        alt="Team SA Logo">
-                    <span class="fw-bold">SA</span>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 5 of 21</p>
+                        <p>Sun, 24 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/gt.png" alt="gt">
+                        <h6>GT</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/mi.jpeg" alt="MI">
+                        <h6>MI</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
                 </div>
-                <p>NZ - 30/1 (09.3)</p>
-                <p>SA - 290/10 (50)</p>
-                <p class="text-danger fw-bold">Live</p>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 6 of 21</p>
+                        <p>Mon, 25 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/rcb.jpg" alt="rcb">
+                        <h6>RCB</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/pbks.png" alt="pbks">
+                        <h6>PBKS</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
             </div>
-
-            <div class="match">
-                <p>2nd T20 - Afghanistan tour of Ireand,2024 </p>
-                <div class="team">
-                    <img src="https://www.shutterstock.com/shutterstock/videos/1094887305/thumb/1.jpg?ip=x480"
-                        alt="Team AFG Logo">
-                    <span class="fw-bold">IRE</span>
+            <div class="row border border-1 solid light">
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 7 of 21</p>
+                        <p>Tue, 26 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/csk.jpeg" alt="csk">
+                        <h6>CSK</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/gt.png" alt="gt">
+                        <h6>GT</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
                 </div>
-                <p>VS</p>
-                <div class="team">
-                    <img src="https://ih0.redbubble.net/image.4650667288.6492/raf,360x360,075,t,fafafa:ca443f4786.jpg"
-                        alt="Team IRE Logo">
-                    <span class="fw-bold">AFG</span>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 8 of 21</p>
+                        <p>Wed, 27 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/srh.png" alt="srh">
+                        <h6>SRH</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/mi.jpeg" alt="mi">
+                        <h6>MI</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
                 </div>
-                <p>AFG - 00/00 (00.0)</p>
-                <p>IRE - 00/00 (00.0)</p>
-                <p class="text-primary fw-bold">Upcoming...</p>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 9 of 21</p>
+                        <p>Thu, 28 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/rr.png" alt="rr">
+                        <h6>RR</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/dc.png" alt="dc">
+                        <h6>DC</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
             </div>
-
-            <div class="match">
-                <p>3rd Test - West Indies tour of Zimbabwe,2024 </p>
-                <div class="team">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjs_8a6spP38pWM0JrpAxA52EVkJc2CSXOrw&usqp=CAU"
-                        alt="Team WI Logo">
-                    <span class="fw-bold">WI</span>
+            <div class="row border border-1 solid light">
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 10 of 21</p>
+                        <p>Fri, 29 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/rcb.jpg" alt="rcb">
+                        <h6>RCB</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/kkr.jpeg" alt="kkr">
+                        <h6>KKR</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
                 </div>
-                <p>VS</p>
-                <div class="team">
-                    <img src="https://i.pinimg.com/736x/a1/58/d4/a158d4c4e68fb43785498615eaece7bd.jpg"
-                        alt="Team ZIM Logo">
-                    <span class="fw-bold">ZIM</span>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 11 of 21</p>
+                        <p>Sat, 30 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/lsg.jpeg" alt="lsg">
+                        <h6>LSG</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/pbks.png" alt="pbks">
+                        <h6>PBKS</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
                 </div>
-                <p>WI - 60/2 (40.5)</p>
-                <p>IRE - 00/00 (00.0)</p>
-                <p class="text-danger fw-bold">Live</p>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 12 of 21</p>
+                        <p>Sun, 31 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/gt.png" alt="gt">
+                        <h6>GT</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/srh.png" alt="srh">
+                        <h6>SRH</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 3:30 pm
+                    </p>
+                </div>
+            </div>
+            <div class="row border border-1 solid light">
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 13 of 21</p>
+                        <p>Sun, 31 Mar</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/dc.png" alt="dc">
+                        <h6>DC</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/csk.jpeg" alt="csk">
+                        <h6>CSK</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 14 of 21</p>
+                        <p>Mon, 1 Apr</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/mi.jpeg" alt="mi">
+                        <h6>MI</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/rr.png" alt="rr">
+                        <h6>RR</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 15 of 21</p>
+                        <p>Tue, 2 Apr</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/rcb.jpg" alt="rcb">
+                        <h6>RCB</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/lsg.jpeg" alt="lsg">
+                        <h6>LSG</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
+            </div>
+            <div class="row border border-1 solid light">
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 16 of 21</p>
+                        <p>Wed, 3 Apr</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/dc.png" alt="dc">
+                        <h6>DC</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/kkr.jpeg" alt="kkr">
+                        <h6>KKR</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 17 of 21</p>
+                        <p>Thu, 4 Apr</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/pbks.png" alt="pbks">
+                        <h6>PBKS</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/gt.png" alt="gt">
+                        <h6>GT</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 18 of 21</p>
+                        <p>Fri, 5 Apr</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/csk.jpeg" alt="csk">
+                        <h6>CSK</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/srh.png" alt="srh">
+                        <h6>SRH</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
+            </div>
+            <div class="row border border-1 solid light">
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 19 of 21</p>
+                        <p>Sat, 6 Apr</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/rr.png" alt="rr">
+                        <h6>RR</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/rcb.jpg" alt="rcb">
+                        <h6>RCB</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 20 of 21</p>
+                        <p>Sun, 7 Apr</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/csk.jpeg" alt="csk">
+                        <h6>CSK</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/dc.png" alt="dc">
+                        <h6>DC</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 3:30 pm
+                    </p>
+                </div>
+                <div class="col text-light m-2">
+                    <div class="time">
+                        <p>T20 21 of 21</p>
+                        <p>Sun, 7 Apr</p>
+                    </div>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/lsg.jpeg" alt="lsg">
+                        <h6>LSG</h6>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./IPL-logo/gt.png" alt="gt">
+                        <h6>GT</h6>
+                    </div>
+                    <br>
+                    <p class="t">Starts at 7:30 pm
+                    </p>
+                </div>
             </div>
 
         </div>
-
     </main>
 
     <footer>
-        <p class="textt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laboriosam quasi qui et quia
-            quibusdam id
-            natus, deserunt, vitae ab aspernatur cumque pariatur voluptatem, tenetur quae odio itaque similique tempore!
-            Ducimus eos hic tempore placeat illo autem debitis delectus! Officia ducimus facilis sed debitis temporibus
-            quos! Eveniet ut deserunt dolores minus ex officia, ipsam aliquam voluptatum fugiat cumque expedita. Ullam.
-        </p>
-        <div class="footer-icons">
-            <a href="#"><img
-                    src="https://img.freepik.com/premium-psd/3d-circle-with-facebook-logo-isolated-transparent-background_125540-3726.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710666000&semt=ais"
-                    alt="Facebook"></a>
-            <a href="#"><img
-                    src="https://img.freepik.com/free-vector/instagram-background-gradient-colors_23-2147823814.jpg"
-                    alt="Instagram"></a>
-            <a href="#"><img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
-                    alt="Twitter"></a>
-            <a href="#"><img
-                    src="https://e1.pxfuel.com/desktop-wallpaper/517/453/desktop-wallpaper-india-national-cricket-team-bcci-logo.jpg"
-                    alt="BCCI"></a>
+        <div class="footer-column">
+            <h5>Contact Us</h5>
+            <p>4th Floor, Cricket Centre</p>
+            <p>Wankhede Stadium ‘D’ Road,</p>
+            <p>Churchgate Mumbai - 400020, India.</p>
+            <p>Email: office@bcci.tv</p>
+        </div>
+        <div class="footer-column">
+            <h5>More</h5>
+            <a href="https://www.bcci.tv/?platform=domestic">
+                <p>Domestic</p>
+            </a>
+            <a
+                href="https://www.wplt20.com/?_gl=1*f5fsk2*_ga*MjAyMTY4NDU3LjE3MTA4NjAxODA.*_ga_EKRMMW7KM9*MTcxMDg2MzU0MS4yLjEuMTcxMDg2MzcyNy4zMy4wLjA.">
+                <p>WPL</p>
+            </a>
+            <a
+                href="https://www.iplt20.com/?_gl=1*1cptxy*_ga*MjAyMTY4NDU3LjE3MTA4NjAxODA.*_ga_EKRMMW7KM9*MTcxMDg2MzU0MS4yLjEuMTcxMDg2MzcwOS41MS4wLjA.">
+                <p>IPL</p>
+            </a>
+            <a href="https://www.bcci.tv/?platform=international">
+                <p>International</p>
+            </a>
+        </div>
+        <div class="footer-column">
+            <h5>About</h5>
+
+            <a href="https://www.bcci.tv/about/history">
+                <p>History
+                </p>
+            </a>
+            <a href="https://www.bcci.tv/about/annual-report">
+                <p>Annual Reports</p>
+            </a>
+            <a href="https://www.bcci.tv/integrity/mcc-laws">
+                <p>MCC Laws of Cricket</p>
+            </a>
+            <a href="https://www.bcci.tv/playing-condition">
+                <p>Playing Condition</p>
+            </a>
+        </div>
+        <div class="footer-column">
+            <div class="iconDiv">
+                <a href="https://www.facebook.com/"><img
+                        src="https://img.freepik.com/premium-psd/3d-circle-with-facebook-logo-isolated-transparent-background_125540-3726.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710666000&semt=ais"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img
+                        src="https://img.freepik.com/free-vector/instagram-background-gradient-colors_23-2147823814.jpg"
+                        alt="Instagram"></a>
+                <a href="https://twitter.com/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
+                        alt="Twitter"></a>
+                <a href="https://www.bcci.tv/"><img
+                        src="https://e1.pxfuel.com/desktop-wallpaper/517/453/desktop-wallpaper-india-national-cricket-team-bcci-logo.jpg"
+                        alt="BCCI"></a>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
