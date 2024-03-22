@@ -1,110 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: #202020;
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            /* background-color: black; */
-            width: 90%;
-            height: 90%;
-            margin-left: 5%;
-            margin-top: 5px;
-            border-radius: 10px;
-            text-align: center;
-        } 
-        .video_sec{
-            /* border: 1px solid white; */
-            height: 450px;
-            width: 1000px;
-            text-align: center;
-            
-            /* padding-top: 10px; */
-        }
-        .video_frame{
-            height: 450px;
-            width: 1000px;
-            /* background-color: #202020; */
-            border-radius: 10px;
-            overflow: hidden;
-        } 
-        #main_video{
-            height: 380px;
-            width: 950px;
-            text-align: center;
-            overflow: hidden;
-        } 
-        .video-list {
-            display: flex;
-            /* border: 1px solid white; */
-            margin-top: 25px;
-            width: 90%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            flex-wrap: wrap;
-            background-color: black;
-            /* padding: 10px; */
-        }
-        .video-item {
-            height: 250px;
-            width: 220px;
-            /* border: 1px solid white; */
-            border-radius: 10px;
-            margin: 10px;
-            text-align: center;
-            background-color: #202020;
-        }
-        h3{
-            color: white;
-            font-size: 10px;
-        }
-        h2{
-            color: white;
-        }
-        .video-dl{
-            height: 200px;
-            width: 200px;
-        }
-        /* .video-title {
-            font-size: 16px;
-            /* margin-top: 10px; */
-        @media screen and (max-width: 414px) {
-        .container{
-            height: auto;
-            width: 100%;
-            text-align: center;
-        }
-        .video_frame {
-            height: auto;
-            width: 100%; 
-            text-align: center;
-        }
+    <link rel="stylesheet" href="videos.css">
 
-        #main_video {
-            height: auto;
-            width: 100%; 
-            text-align: center;
-        }
-    }
-        
-      </style>
 </head>
+
+<header>
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Cricbuzz_Logo.png" alt="Cricket Logo">
+    </div>
+    <nav>
+        <ul>
+            <li class="navLi"><a href="index.html">Home</a></li>
+            <li class="navLi"><a href="news.html">News</a></li>
+            <li class="navLi"><a href="videos.html">Videos</a></li>
+            <div class="sidebar-icon">
+                <img src="https://banner2.cleanpng.com/20180628/zaz/kisspng-computer-icons-hamburger-button-menu-new-menu-5b34724be5a1f0.5796308115301637879406.jpg"
+                    alt="Sidebar Icon">
+            </div>
+
+        </ul>
+    </nav>
+    <div class="sidebar">
+
+        <div><a href="index.html">Home</a></div>
+        <div><a href="news.html">News</a></div>
+        <div><a href="#">Videos</a></div>
+    </div>
+</header>
+
+
 <body>
     <div class="container">
-        <h2>Indian Premier League Highlights - 2024</h2>
+        <p class="nameIpl">Indian Premier League Highlights - 2024</p>
         <div class="video_sec">
             <div class="video_frame">
                 <video src="#" id="main_video" controls muted></video>
@@ -114,52 +46,71 @@
         <div class="video-list" id="video-list">
         </div>
     </div>
+
+    <footer>
+        <div class="footer-column">
+            <h5>Contact Us</h5>
+            <p>4th Floor, Cricket Centre</p>
+            <p>Wankhede Stadium ‘D’ Road,</p>
+            <p>Churchgate Mumbai - 400020, India.</p>
+            <p>Email: office@bcci.tv</p>
+        </div>
+        <div class="footer-column">
+            <h5>More</h5>
+            <a href="https://www.bcci.tv/?platform=domestic">
+                <p>Domestic</p>
+            </a>
+            <a
+                href="https://www.wplt20.com/?_gl=1*f5fsk2*_ga*MjAyMTY4NDU3LjE3MTA4NjAxODA.*_ga_EKRMMW7KM9*MTcxMDg2MzU0MS4yLjEuMTcxMDg2MzcyNy4zMy4wLjA.">
+                <p>WPL</p>
+            </a>
+            <a
+                href="https://www.iplt20.com/?_gl=1*1cptxy*_ga*MjAyMTY4NDU3LjE3MTA4NjAxODA.*_ga_EKRMMW7KM9*MTcxMDg2MzU0MS4yLjEuMTcxMDg2MzcwOS41MS4wLjA.">
+                <p>IPL</p>
+            </a>
+            <a href="https://www.bcci.tv/?platform=international">
+                <p>International</p>
+            </a>
+        </div>
+        <div class="footer-column">
+            <h5>About</h5>
+
+            <a href="https://www.bcci.tv/about/history">
+                <p>History
+                </p>
+            </a>
+            <a href="https://www.bcci.tv/about/annual-report">
+                <p>Annual Reports</p>
+            </a>
+            <a href="https://www.bcci.tv/integrity/mcc-laws">
+                <p>MCC Laws of Cricket</p>
+            </a>
+            <a href="https://www.bcci.tv/playing-condition">
+                <p>Playing Condition</p>
+            </a>
+        </div>
+        <div class="footer-column">
+            <div class="iconDiv">
+                <a href="https://www.facebook.com/"><img
+                        src="https://img.freepik.com/premium-psd/3d-circle-with-facebook-logo-isolated-transparent-background_125540-3726.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710666000&semt=ais"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img
+                        src="https://img.freepik.com/free-vector/instagram-background-gradient-colors_23-2147823814.jpg"
+                        alt="Instagram"></a>
+                <a href="https://twitter.com/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
+                        alt="Twitter"></a>
+                <a href="https://www.bcci.tv/"><img
+                        src="https://e1.pxfuel.com/desktop-wallpaper/517/453/desktop-wallpaper-india-national-cricket-team-bcci-logo.jpg"
+                        alt="BCCI"></a>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
-<script>
-        const videos = [
-      { title: 'Video 1', url: 'videos/video10.mp4' },
-      { title: 'video 2', url: 'videos/video9.mp4' },
-      { title: 'ABD goes 360° against Kolkata Knight Riders', url: 'videos/ABD goes 360° against Kolkata Knight Riders.mp4' },
-      { title: 'ABDs Absolute Demolition Against Rajasthan Royals', url: 'videos/ABDs Absolute Demolition Against Rajasthan Royals.mp4' },
-      { title: 'Chennai Super Kings v Royal Challengers Bangalore', url: 'videos/Chennai Super Kings v Royal Challengers Bangalore.mp4' },
-      { title: 'Kohli, Gayle take RCB upto 2nd spot with thumping win over KXIP', url: 'videos/Kohli, Gayle take RCB upto 2nd spot with thumping win over KXIP.mp4' },
-      { title: 'MI-DD_ Krunal Pandyas blistering knock helps MI win', url: 'videos/MI-DD_ Krunal Pandyas blistering knock helps MI win.mp4' },
-      { title: 'Pollard Knock _ RCBvMI', url: 'videos/Pollard Knock _ RCBvMI.mp4' },
-      { title: 'Trent Boults fiery spell vs CSK', url: 'videos/Trent Boults fiery spell vs CSK.mp4' },
+<script src="videos.js">
 
-    ];
-        function createVideoElement(video){
-            const videoItem = document.createElement('div');
-            videoItem.classList.add('video-item');
-
-            const videoElement = document.createElement('video');
-            videoElement.classList.add('video-dl');
-            videoElement.src = video.url
-
-            const titleElement = document.createElement('h3');
-            titleElement.classList.add('video-title');
-            titleElement.textContent = video.title;
-
-            const main = document.getElementById('main_video');
-            const title =document.getElementById('main-title');
-
-            videoItem.addEventListener('click',function(){
-                main.src = videoElement.src;
-                title.textContent = titleElement.textContent;
-                main.play();
-            })
-            videoItem.appendChild(videoElement);
-            videoItem.appendChild(titleElement);
-            return videoItem;
-        } 
-
-        function initializeVideoList(){
-            const videoList = document.getElementById('video-list');
-            videos.forEach(video => {
-                const videoElement = createVideoElement(video);
-                videoList.appendChild(videoElement);
-            });
-        }
-        document.addEventListener('DOMContentLoaded',initializeVideoList); 
 </script>
+
 </html>

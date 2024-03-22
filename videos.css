@@ -1,0 +1,475 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:red;
+}
+
+
+header {
+    background-color: white;
+    color: red;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo img {
+    vertical-align: middle;
+    width: 160px;
+    height: 50px
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    margin: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color:red;
+    text-decoration: none;
+}
+
+
+.sidebar {
+    display: none;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    left: 90%;
+}
+
+.sidebar div {
+    margin: 20px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-icon img {
+    width: 30px;
+}
+
+.sidebar-icon {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    left: 90%;
+}
+
+.sidebar div {
+    margin: 20px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-icon img {
+    width: 30px;
+}
+
+.sidebar-icon {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(32, 33, 36);
+    color: white;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: white;
+}
+
+.iconDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconDiv img {
+    width: 30px;
+    height: 30px;
+}
+
+h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto; 
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box; 
+    padding: 10px; 
+    overflow-x: hidden; 
+}
+
+
+.video_sec {
+    width: fit-content;
+    text-align: center;
+background-color:white;
+}
+
+.video_frame {
+   
+    width: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#main_video {
+    height: 380px;
+    width: 950px;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.video-list {
+    display: flex;
+    margin-top: 25px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    background-color: white;
+    
+}
+
+.video-item {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #202020;
+}
+
+h3 {
+    color: white;
+    font-size: 10px;
+}
+
+.nameIpl {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.video-dl {
+    height: 200px;
+    width: 200px;
+}
+
+
+@media screen and (max-width: 970px) {
+.video_sec{
+    width: fit-content;
+    text-align: center;
+}
+    .video_frame {
+        width: fit-content;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #main_video {
+        width: 900px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+.video_sec{
+    width: fit-content;
+    text-align: center;
+}
+    .video_frame {
+        width: fit-content;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #main_video {
+        width: 700px;
+        text-align: center;
+    }
+    .nameIpl{
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .sidebar-icon {
+        display: block;
+        border: 3px solid red;
+    }
+
+    .sidebar {
+        display: block;
+        position: relative;
+        left: 0%;
+    }
+
+    .sidebar a {
+        font-size: 15px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+    .video_sec{
+        width: fit-content;
+        text-align: center;
+    }
+        .video_frame {
+            width: fit-content;
+            text-align: center;
+            padding: 4px;
+        }
+    
+        #main_video {
+            width: 600px;
+            text-align: center;
+        }
+        .nameIpl{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+}
+
+@media screen and (max-width: 621px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .sidebar-icon img {
+        width: 25px;
+    }
+
+    .logo img {
+        vertical-align: middle;
+        width: 125px;
+        height: 28px
+    }
+
+    .sidebar {
+        position: relative;
+        left: 0%;
+    }
+
+    .sidebar a {
+        font-size: 10px;
+    }
+
+
+.video_sec{
+    width: fit-content;
+    text-align: center;
+}
+    .video_frame {
+        width: fit-content;
+        text-align: center;
+        padding: 3px;
+    }
+
+    #main_video {
+        width: 400px;
+        text-align: center;
+    }
+    .nameIpl{
+        font-size: 22px;
+    }
+    .video-item {
+        height: 250px;
+        width: 240px;
+        border-radius: 8px;
+    }
+    .video-dl{
+        height: 190px;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width:445px) {
+    footer {
+        width: 100vw;
+    }
+
+    .footer-column {
+        flex: 1;
+        margin: 6px;
+    }
+
+    .iconDiv img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .iconDiv {
+        gap: 7px;
+    }
+
+    .footer-column h5 {
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+
+    .footer-column p {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+
+    .sidebar {
+        display: block;
+        position: relative;
+        left: -16%;
+    }
+
+    .sidebar a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .sidebar {
+        position: relative;
+        left: 0%;
+    }
+
+    .sidebar a {
+        font-size: 10px;
+    }
+
+    .sidebar-icon img {
+        width: 22px;
+    }
+
+    .video_sec{
+        width: fit-content;
+        text-align: center;
+    }
+        .video_frame {
+            width: fit-content;
+            text-align: center;
+            padding: 3px;
+        }
+    
+        #main_video {
+            width: 300px;
+            text-align: center;
+        }
+        .nameIpl{
+            font-size: 17px;
+        }
+        .video-item {
+            height: 200px;
+            width: 200px;
+            border-radius: 8px;
+        }
+        .video-dl{
+            height: 180px;
+            width: 180px;
+        }
+}
+
+@media screen and (max-width:200px) {
+    .logo img {
+        vertical-align: middle;
+        width: 75px;
+        height: 18px
+    }
+
+    .sidebar-icon img {
+        width: 18px;
+    }
+
+    .sidebar {
+        position: relative;
+        left: 0%;
+    }
+
+    .sidebar a {
+        font-size: 8px;
+    }
+
+    .video_sec{
+        width: fit-content;
+        text-align: center;
+    }
+        .video_frame {
+            width: fit-content;
+            text-align: center;
+        }
+    
+        #main_video {
+            width: 200px;
+            text-align: center;
+        }
+        p{
+            font-size: 11px;
+        }
+        .video-item {
+            height: 230px;
+            width: 220px;
+            border-radius: 8px;
+        }
+        .video-dl{
+            height: 150px;
+            width: 130px;
+        }
+}
+
