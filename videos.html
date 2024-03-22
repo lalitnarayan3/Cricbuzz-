@@ -64,6 +64,7 @@
         }
         h3{
             color: white;
+            font-size: 10px;
         }
         h2{
             color: white;
@@ -80,7 +81,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Video list</h2>
+        <h2>Indian Premier League Highlights - 2024</h2>
         <div class="video_sec">
             <div class="video_frame">
                 <video src="#" id="main_video" controls muted></video>
@@ -94,7 +95,15 @@
 <script>
         const videos = [
       { title: 'Video 1', url: 'videos/video10.mp4' },
-      { title: 'Video 2', url: 'videos/video9.mp4' }
+      { title: 'video 2', url: 'videos/video9.mp4' },
+      { title: 'ABD goes 360° against Kolkata Knight Riders', url: 'videos/ABD goes 360° against Kolkata Knight Riders.mp4' },
+      { title: 'ABDs Absolute Demolition Against Rajasthan Royals', url: 'videos/ABDs Absolute Demolition Against Rajasthan Royals.mp4' },
+      { title: 'Chennai Super Kings v Royal Challengers Bangalore', url: 'videos/Chennai Super Kings v Royal Challengers Bangalore.mp4' },
+      { title: 'Kohli, Gayle take RCB upto 2nd spot with thumping win over KXIP', url: 'videos/Kohli, Gayle take RCB upto 2nd spot with thumping win over KXIP.mp4' },
+      { title: 'MI-DD_ Krunal Pandyas blistering knock helps MI win', url: 'videos/MI-DD_ Krunal Pandyas blistering knock helps MI win.mp4' },
+      { title: 'Pollard Knock _ RCBvMI', url: 'videos/Pollard Knock _ RCBvMI.mp4' },
+      { title: 'Trent Boults fiery spell vs CSK', url: 'videos/Trent Boults fiery spell vs CSK.mp4' },
+
     ];
         function createVideoElement(video){
             const videoItem = document.createElement('div');
