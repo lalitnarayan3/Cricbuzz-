@@ -16,30 +16,34 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: black;
+            /* background-color: black; */
             width: 90%;
             height: 90%;
             margin-left: 5%;
             margin-top: 5px;
             border-radius: 10px;
+            text-align: center;
         } 
         .video_sec{
             /* border: 1px solid white; */
             height: 450px;
             width: 1000px;
             text-align: center;
+            
             /* padding-top: 10px; */
         }
         .video_frame{
             height: 450px;
             width: 1000px;
-            background-color: #202020;
+            /* background-color: #202020; */
             border-radius: 10px;
+            overflow: hidden;
         } 
         #main_video{
             height: 380px;
             width: 950px;
             text-align: center;
+            overflow: hidden;
         } 
         .video-list {
             display: flex;
@@ -51,6 +55,7 @@
             align-items: center;
             border-radius: 10px;
             flex-wrap: wrap;
+            background-color: black;
             /* padding: 10px; */
         }
         .video-item {
@@ -76,6 +81,24 @@
         /* .video-title {
             font-size: 16px;
             /* margin-top: 10px; */
+        @media screen and (max-width: 414px) {
+        .container{
+            height: auto;
+            width: 100%;
+            text-align: center;
+        }
+        .video_frame {
+            height: auto;
+            width: 100%; /* Make the frame full width on smaller screens */
+            text-align: center;
+        }
+
+        #main_video {
+            height: auto;
+            width: 100%; /* Make the video full width on smaller screens */
+            text-align: center;
+        }
+    }
         
       </style>
 </head>
